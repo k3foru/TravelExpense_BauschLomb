@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - [TE China - BNL] - Travel Expense Claim Module Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>[TE China - BNL] - Travel Expense Claim Module Test</h1>
+<p>
+  Test duration: 1437.951s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">tests.travelExpenseClaim.TravelExpenseClaim_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', add two details with same data and Verify should not Add Under 'Lodging Section' and verify two details to be added on header.">addAndSaveTwoDataInLodgingSectionExpense_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    28.402s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, add two details with same data and Verify should not Add Under &apos;Lodging Section&apos; and verify two details to be added on header. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 265 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.fillLodgingSection(TravelExpenseClaim.java:282)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.addAndSaveTwoDataInLodgingSectionExpense_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:334)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to Add 'Travel Expense Claim', add Claim check for Attendees attempt limit in Master page and verify Attendees details should be in 'Red' color if Attending more than limit.">addClaimAndVerifyTimeOfAttandeesAndAmount_InInternalMeetingSetion</span>
+      </td>
+  <td class="duration">
+    56.108s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to Add &apos;Travel Expense Claim&apos;, add Claim check for Attendees attempt limit in Master page and verify Attendees details should be in &apos;Red&apos; color if Attending more than limit. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Logged in User Logout successfuly, URL nevigated to &apos;Default&apos; page. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Logged in as Manager (Admin) of Normal User to get the &apos;Attendee Limit&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Logged in User Logout successfuly, URL nevigated to &apos;Default&apos; page. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Logged in as Normal User to Add the new claim. &lt;/li&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 266 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.fillDetailsInInternalMeetingSectionForLimitOFAttendees(TravelExpenseClaim.java:791)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.addClaimAndVerifyTimeOfAttandeesAndAmount_InInternalMeetingSetion(TravelExpenseClaim_TestCases.java:808)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Edit' 'Delete' and 'save' Expense Under 'Other Section'.">addEditAndSaveInOtherSectionExpenseDetails_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    16.614s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;Edit&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Other Section&apos;. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 250 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.fillDetailsInOtherSection(TravelExpenseClaim.java:631)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.addEditAndSaveInOtherSectionExpenseDetails_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:632)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Edit' 'Delete' and 'save' Expense Under 'Internal Meeting Section', Add One more Expense (with Same Data)and verify both expense Added amount displaying on Header.">addEditDeleteAndSaveInInternalMeetingSetionExpenseDetails_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    86.738s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;View&apos; &apos;Edit&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Internal Meeting Section&apos;, Add One more Expense (with Same Data)and verify both expense Added amount displaying on Header. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : &apos;View&apos; &apos;Edit&apos; and &apos;Delete&apos; Action img appearing on page After Added Expense claim in &apos;Internal Meeting section&apos; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added &apos;TypeOfEntertainment&apos; are displaying in grid. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : All &apos;Attendees Information&apos; displaying same as entered data. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added Expense Details while Editing All Entered Data Appearing in respective fields. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, click to Cancel button of Edit Action and verify the Cancel button not present. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : after Edited added amount has changed Total Expence Amount to :: 80 &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : update expense amount displaying on Internal meeting Header is: - Internal meeting/Entertainment/Business Meals - Sub Total: 80 &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Verified : Clicked to &apos;delete&apos; button vrification Alert is :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Clicked to &apos;delete&apos; button and verified to Alert appearing, cancel the alert Record not deleted &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing and clicked to ok button, Added Expense Deleted. &lt;/li&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 234 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.fillDetailsInInternalMeetingSection(TravelExpenseClaim.java:766)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.addEditDeleteAndSaveInInternalMeetingSetionExpenseDetails_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:914)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'Other Header Section', and Verify Added total expense in 'Other Section' is equals to 'Amount*Rate'.">checkValidationOfFieldsAndTotalRateInOtherSection_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    66.298s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Other Header Section&apos;, and Verify Added total expense in &apos;Other Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Fields Validation and verificaton of alert of &apos;Other Section&apos; ::&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ On click Add Button - validation for Fields which is Mandatory:: - Expense Type cannot be blank.<br/>
+- Expense Date cannot be blank.<br/>
+- Expense Description cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ On click Save Button - validation for Fields which is Mandatory:: Please add atleast one record. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Verified:&nbsp; All Expense type present in in Dropdon. &lt;/li&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 250 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.checkFieldsValidation_OtherSection(TravelExpenseClaim.java:606)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.checkValidationOfFieldsAndTotalRateInOtherSection_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:607)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'Travel Transportation Section'.">checkValidationOfTravelTransportationFields_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    21.202s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Travel Transportation Section&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; On click Add Button - validation for Fields which is Mandatory:: - Departure Date cannot be blank.<br/>
+- Depatrue Time is required<br/>
+- Location from cannot be blank.<br/>
+- Location to cannot be blank.<br/>
+- Transportation type cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ On click Save Button - validation for Fields which is Mandatory:: Please add atleast one record. &lt;/li&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 327 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.CommonMethods.selectGivenDateFromCalendar(CommonMethods.java:37)<br />
+              modules.TravelExpenseClaim.checkValidation_TravelTransportationSection(TravelExpenseClaim.java:84)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.checkValidationOfTravelTransportationFields_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:112)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and Click to 'Travel Expense Claim' in Claim Tab, Check and verify paging on the 'My Travel Claim List' page.">checkVerifyPagingOnTravelExpenseClaimListPage</span>
+      </td>
+  <td class="duration">
+    1.873s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and Click to &apos;Travel Expense Claim&apos; in Claim Tab, Check and verify paging on the &apos;My Travel Claim List&apos; page. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 172 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.checkVerifyPagingOnTravelExpenseClaimListPage(TravelExpenseClaim_TestCases.java:1904)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Fill All Expense Section, After Added Expense Verify the Added Expense View Page to All Details are same as entered Data, Verify Details Page and view Comment page.">fillAllExpenseSectionSaveAndVerifySummaryPage_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    111.615s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Fill All Expense Section, After Added Expense Verify the Added Expense View Page to All Details are same as entered Data, Verify Details Page and view Comment page. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.util.NoSuchElementException</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              java.util.LinkedHashMap$LinkedHashIterator.nextEntry(Unknown Source)<br />
+              java.util.LinkedHashMap$KeyIterator.next(Unknown Source)<br />
+              util.TestNgHelper.childWindowHandler(TestNgHelper.java:230)<br />
+              modules.TravelExpenseClaim.fillDetailsInPersonalMealSection(TravelExpenseClaim.java:535)<br />
+              modules.TravelExpenseClaim.fillAllExpenseSectionInTravelClaim(TravelExpenseClaim.java:877)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.fillAllExpenseSectionSaveAndVerifySummaryPage_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:995)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Fill All Expense Section, Verify Added claim Edit and Delete Action, Verify All Action.">fillAllExpenseSectionSaveEditAndDelete_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    2.014s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Fill All Expense Section, Verify Added claim Edit and Delete Action, Verify All Action. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 218 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-8">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.fillAllExpenseSectionSaveEditAndDelete_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:1083)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User, Submit 'Travel Expense Claim'  in Claim Tab, and Verify the Reject and Approve claim from his Manager(Admin).">submitTravelExpenseClaimAndRejectApproveFromAdmin</span>
+      </td>
+  <td class="duration">
+    1.967s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User, Submit &apos;Travel Expense Claim&apos;&nbsp; in Claim Tab, and Verify the Reject and Approve claim from his Manager(Admin). &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 171 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.submitTravelExpenseClaimAndRejectApproveFromAdmin(TravelExpenseClaim_TestCases.java:1407)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User, Submit 'Travel Expense Claim' in Claim Tab, Reject & Return claim By Finance User and verify All Status on Corresponding page.">submitTravelExpenseClaimAnd_ApproveByAdminAndRejectReturnByFinanceUser</span>
+      </td>
+  <td class="duration">
+    1.858s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User, Submit &apos;Travel Expense Claim&apos; in Claim Tab, Reject &amp; Return claim By Finance User and verify All Status on Corresponding page. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 188 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-10">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.submitTravelExpenseClaimAnd_ApproveByAdminAndRejectReturnByFinanceUser(TravelExpenseClaim_TestCases.java:1584)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User, Submit 'Travel Expense Claim'  in Claim Tab, Added Claim Approve By Admin and Settle claim By Finance User And Verify All Claim Details, Work Flow and Comment on Claim Summary page.">submitTravelExpenseClaim_ApproveByAdminAndSettleByFinanceUser</span>
+      </td>
+  <td class="duration">
+    1.842s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User, Submit &apos;Travel Expense Claim&apos;&nbsp; in Claim Tab, Added Claim Approve By Admin and Settle claim By Finance User And Verify All Claim Details, Work Flow and Comment on Claim Summary page. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 172 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-11">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.submitTravelExpenseClaim_ApproveByAdminAndSettleByFinanceUser(TravelExpenseClaim_TestCases.java:1775)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Fill All Expense Section, Submit the Claim and verify Cancel Action and and than Status than Edit the Cancel Claim.">submitTravelExpenseClaim_VerifyCancelActionAndStatusOnListPage</span>
+      </td>
+  <td class="duration">
+    2.154s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Fill All Expense Section, Submit the Claim and verify Cancel Action and and than Status than Edit the Cancel Claim. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 187 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.submitTravelExpenseClaim_VerifyCancelActionAndStatusOnListPage(TravelExpenseClaim_TestCases.java:1278)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Fill All Expense Section, Submit the Claim and verify the Claim Status and all details on View Summary page.">submitTravelExpenseClaim_VerifyStatusViewActionOnListPage</span>
+      </td>
+  <td class="duration">
+    2.107s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Fill All Expense Section, Submit the Claim and verify the Claim Status and all details on View Summary page. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 187 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-13">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.submitTravelExpenseClaim_VerifyStatusViewActionOnListPage(TravelExpenseClaim_TestCases.java:1165)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and Click to 'Travel Expense Claim' in Claim Tab, verify if 'Claim Amount' Greater Than 'Approver Range Amount' than Claim should not submit (Alert Displaying) while submitting claim.">verifyRequestAmountGreaterThanApproverRange_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    102.125s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and Click to &apos;Travel Expense Claim&apos; in Claim Tab, verify if &apos;Claim Amount&apos; Greater Than &apos;Approver Range Amount&apos; than Claim should not submit (Alert Displaying) while submitting claim. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out after 100 seconds waiting for util.TestNgHelper$1@1e3bfb6<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: unknown</b></a><br />
+    <div class="stackTrace" id="exception-14">
+              org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:251)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:220)<br />
+              util.TestNgHelper.waitForCondition(TestNgHelper.java:160)<br />
+              modules.UserLogin.userLogout(UserLogin.java:44)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.verifyRequestAmountGreaterThanApproverRange_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:1356)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to find element with id == ctl00_cphMain_btnLogin (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 5.34 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</a><br />
+        <div class="stackTrace" id="exception-15">
+                      sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)<br />
+                      org.openqa.selenium.By$ById.findElement(By.java:215)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)<br />
+                      util.TestNgHelper$1.apply(TestNgHelper.java:151)<br />
+                      util.TestNgHelper$1.apply(TestNgHelper.java:1)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:200)<br />
+                      util.TestNgHelper.waitForCondition(TestNgHelper.java:160)<br />
+                      modules.UserLogin.userLogout(UserLogin.java:44)<br />
+                      tests.travelExpenseClaim.TravelExpenseClaim_TestCases.verifyRequestAmountGreaterThanApproverRange_TravelExpenseClaim(TravelExpenseClaim_TestCases.java:1356)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+                      org.testng.TestNG.run(TestNG.java:979)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and Click to 'Travel Expense Claim' in Claim Tab, On My Travel Claim List page - Check and verify For Search Option are Searching as per functionality.">verifySearchFunctionalityOnTravelExpenseClaimListPage</span>
+      </td>
+  <td class="duration">
+    1.857s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and Click to &apos;Travel Expense Claim&apos; in Claim Tab, On My Travel Claim List page - Check and verify For Search Option are Searching as per functionality. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-16', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 156 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-16">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.verifySearchFunctionalityOnTravelExpenseClaimListPage(TravelExpenseClaim_TestCases.java:1917)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User go to 'Travel Expense Claim' Listing page and verify to Sorting of Claims list by 'Claim no.' and 'Creation date'.' message display.">verifySortingOfListsByClaimNoAndCreationDate</span>
+      </td>
+  <td class="duration">
+    1.827s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User go to &apos;Travel Expense Claim&apos; Listing page and verify to Sorting of Claims list by &apos;Claim no.&apos; and &apos;Creation date&apos;. &lt;/h3&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-17', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: The point at which the driver is attempting to click on the element was not scrolled into the viewport. (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 157 milliseconds<br/>
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_22&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Session ID: 7cea6176-3ac6-44de-a26c-0038c0af67e3</b></a><br />
+    <div class="stackTrace" id="exception-17">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              modules.TravelExpenseClaim.claimForTravelExpense(TravelExpenseClaim.java:51)<br />
+              tests.travelExpenseClaim.TravelExpenseClaim_TestCases.verifySortingOfListsByClaimNoAndCreationDate(TravelExpenseClaim_TestCases.java:1931)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1067)<br />
+              org.testng.TestNG.run(TestNG.java:979)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">tests.travelExpenseClaim.TravelExpenseClaim_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', add two details with same data and Verify should not Add Under 'Travel Transportation Section' and verify two details to be added on header.">addAndSaveTwoDataInTravelTransportationExpense_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    71.954s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, add two details with same data and Verify should not Add Under &apos;Travel Transportation Section&apos; and verify two details to be added on header. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Travel Transportation Added and on the header of Travel Transportation - &apos;Travel Transportation - Sub Total: 450&apos; displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Adding one more time same data to add expense, and validation alert has to appear to not save. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Travel Transportation Added both record and on the header of Travel Transportation - &apos;Travel Transportation - Sub Total: 900&apos; displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Delete' and 'save' Expense Under 'Personal Meal Section' and Verify Added total expense is equals to 'Amount*Rate'.">addDeleteAndTotalExpenseVerificationInPersonalMeal_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    51.816s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Personal Meal Section&apos; and Verify Added total expense is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;Personal Meal Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Personal Meal Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : In Personal Meal Section Added one expense and on the header of Personal Meal Total Amount - &apos;Personal Meal - Sub Total: 290&apos; is displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : For Add expense in &apos;Personal Meal Section&apos; delete img button appearing. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : For Added Expense in &apos;Personal Meal Section&apos; click of delete button and check for validation Alert, Validation Alert - :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Cancel to Delete Action and verified Record not deleted. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : For Added Expense in &apos;Personal Meal Section&apos; click of delete button and check for validation Alert, Validation Alert - :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Accecpted to Delete Action and verified Record deleted. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Delete' and 'save' Expense Under 'Local Transportation Section' and Verify Added total expense is equals to 'Amount*Rate'.">addDeleteAndTotalRateVerificationInLocalTransportation_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    53.376s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Local Transportation Section&apos; and Verify Added total expense is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;local Transportation Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Local Transportation Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : In local Transportation Section Added one expense and on the header of local Transportation Total Amount - &apos;Local Transportation (Travel Expense) - Sub Total: 510&apos; is displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : For Add expense in &apos;Local Transportation Section&apos; delete img button appearing. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : For Added Expense in &apos;Local Transportation Section&apos; click of delete button and check for validation Alert, Validation Alert - :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Cancel to Delete Action and verified Record not deleted. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : For Added Expense in &apos;Local Transportation Section&apos; click of delete button and check for validation Alert, Validation Alert - :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Accepted to Delete Action and verified Record deleted. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Edit' 'Delete' and 'save' Expense Under 'Lodging Section'.">addEditAndSaveInLodgingSectionExpenseDetails_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    106.215s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;Edit&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Lodging Section&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : &apos;Edit&apos; and &apos;Delete&apos; Action img appearing on page After Added Expense claim in &apos;Lodging section&apos; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added Expense Details while Editing All Entered Data Appearing in respective fields. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, click to Cancel button of Edit Action and verify the Cancel button not present. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : after Edited added amount has changed Total Expence Amount to :: 612 &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : update expense amount displaying on Lodging Header. - Sub Total: 612&apos; is displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing, cancel the alert Record not deleted &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing and clicked to ok button, Added Expense Deleted. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : in Lodging Added one expense and on the header of Lodging - &apos;Lodging - Sub Total: 500&apos; is displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Add' 'Edit' 'Delete' and 'save' Expense Under 'Travel Transportation Section'.">addEditAndSaveTravelTransportationExpenseDetails_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    88.500s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Add&apos; &apos;Edit&apos; &apos;Delete&apos; and &apos;save&apos; Expense Under &apos;Travel Transportation Section&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : the Total Expense Amount in &apos;Travel Transportation&apos; is Amount*Rate = :: 450.00 &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : &apos;Edit&apos; and &apos;Delete&apos; Action img appearing on page After Added Expense claim in &apos;Travel Transportation&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added Expense Details while Editing All Entered Data Appearing in respective fields. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, click to Cancel button of Edit Action and verify the Cancel button not present. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified after Edited added amount has changed Total Expence Amount in &apos;Travel Transportation&apos; is :: 198.00 &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing and clicked to ok button, Added Expense Deleted. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Travel Transportation Added one expense and on the header of Travel Transportation - &apos;Travel Transportation - Sub Total: 450&apos; displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Check and select the 'Type Of Entertainment' Options under 'Internal Meeting Section', and verify dependent radio button is enable and disable, and verify Add and Delete Rows.">checkAndVerifyTypeOfEntertainmentOptionAndAddDeleteRowsInInternalMeeting_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    47.151s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Check and select the &apos;Type Of Entertainment&apos; Options under &apos;Internal Meeting Section&apos;, and verify dependent radio button is enable and disable, and verify Add and Delete Rows. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : seleced all the &apos;Type Of Entertainment&apos; Options under &apos;Internal Meeting Section&apos;, and verified dependent radio button is enable and disable. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : Validation to delete the row : validation in alert :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : canceled the delete alert and verified row not deleted from the list. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : Validation to delete the row : validation in alert :: Are you sure you want to delete the record? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : accept (OK) the delete alert and verified row deleted from the list. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Only One Row Added in List by one click of &apos;Add new Row&apos; button &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'Internal Meeting Section', and Verify Added total expense in 'Internal Meeting Section' is equals to 'Amount*Rate'.">checkValidationOfFieldsAndTotalExpenseInInternalMeeting_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    69.012s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Internal Meeting Section&apos;, and Verify Added total expense in &apos;Internal Meeting Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Fields Validation and verificaton with alert in &apos;Internal Meeting Section&apos; ::&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ On click Add Button - validation for Fields which is Mandatory:: - Date cannot be blank.<br/>
+- City cannot be blank.<br/>
+- Place cannot be blank.<br/>
+- Type Of Entertainment cannot be blank.<br/>
+- Duration cannot be blank.<br/>
+- Purpose cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+- Name cannot be blank.<br/>
+- Title cannot be blank.<br/>
+- Company cannot be blank.<br/>
+- Please select Attendee Type.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ On click Save Button - validation for Fields which is Mandatory:: Please add atleast one record. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ validation for &apos;Date&apos; fields, send after todays date and check the validation in alert :: - Date cannot be greater than today.<br/>
+- City cannot be blank.<br/>
+- Place cannot be blank.<br/>
+- Type Of Entertainment cannot be blank.<br/>
+- Duration cannot be blank.<br/>
+- Purpose cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+- Name cannot be blank.<br/>
+- Title cannot be blank.<br/>
+- Company cannot be blank.<br/>
+- Please select Attendee Type.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Verified:&nbsp; All type of Entertainment present in in Dropdon. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ validation for &apos;Amount&apos; fields, Exceed the limit : validation in alert :: The Amount (RMB) exceeds the given limit of Others. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : If Amout is Exceeding the Claim Amount than Validation Alert Appearing on click. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : All fields validation and verification under &apos;Internal Meeting Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Internal Meeting Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : In Internal Meeting Section Added one expense and on the header of Internal Meeting Total Amount - &apos;Internal meeting/Entertainment/Business Meals - Sub Total: 1300&apos; is displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'local Transportation Section', and Verify Added total expense in 'local Transportation Section' is equals to 'Amount*Rate'.">checkValidationOfFieldsAndTotalRateInLocalTransportation_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    44.757s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Local Transportation Section&apos;, and Verify Added total expense in &apos;local Transportation Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : In &apos;local Transportation Section&apos; &apos;Add/Adit and Save&apos; Button displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit local Transportation Section&apos; page&nbsp; Title is - Add / Edit Local Transportation &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit local Transportation Section&apos; following fields are displaying 1)Date and Time 2) From 3) To 4) Purpose 5) Payment mode 6) Currency 7) Amount 8) Rate 9) Amount(RMB) 10) Delete 11)Add10MoreButton 12)SaveButton 13) CancelButton. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit local Transportation Section&apos; clicked to &apos;Add 10 More&apos; Button and 10 more table has to created.&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit local Transportation Section&apos; Cancel the window has canceled&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : All fields validation and verification under &apos;Local Transportation Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Local Transportation Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'Lodging Header Section', and Verify Added total expense in 'Lodging Section' is equals to 'Amount*Rate'.">checkValidationOfFieldsAndTotalRateInLodgingSection_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    107.380s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Lodging Header Section&apos;, and Verify Added total expense in &apos;Lodging Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Fields Validation and verificaton of alert of &apos;Lodging Section&apos; ::&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ On click Add Button - validation for Fields which is Mandatory:: - Location cannot be blank.<br/>
+- Hotel cannot be blank.<br/>
+- Checked In Date cannot be blank.<br/>
+- Checked Out Date cannot be blank.<br/>
+- Number of Nights cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ On click Save Button - validation for Fields which is Mandatory:: Please add atleast one record. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Verified : Selected Hotel &apos;Other&apos; for location and a text box displaying adjacent to the Hotel drop down and user are able to enter location details. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ On click Add Button without enter hotel in other field - validation for Fields which is Mandatory:: - Hotel cannot be blank.<br/>
+- Checked In Date cannot be blank.<br/>
+- Checked Out Date cannot be blank.<br/>
+- Number of Nights cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ validation for &apos;Checked In Date&apos; and &apos;Checked out Date&apos; fields, send after todays date and check the validation in alert :: - Checked In Date cannot be greater than today.<br/>
+- Checked Out Date cannot be greater than today.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Checked the validation for &apos;Checked In Date&apos; is greater than &apos;Checked out Date&apos;, &apos;Checked out Date&apos; field not accepting less date, and check the validation in alert :: - Checked Out Date cannot be blank.<br/>
+- Number of Nights cannot be blank.<br/>
+- Payment mode cannot be blank.<br/>
+- Amount cannot be blank.<br/>
+- Amount in local currency cannot be blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+ Verified : &apos;Number of Nights&apos; field is &apos;nonEditable&apos; and containing number of gap between &apos;Checked In Date&apos; and &apos;Checked out Date&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : All fields validation and verification under &apos;Lodging Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Lodging Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : in Lodging Added one expense and on the header of Lodging - &apos;Lodging - Sub Total: 500&apos; is displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Check the Validation for fields under 'Personal Meal Section', and Verify Added total expense in 'Personal Meal Section' is equals to 'Amount*Rate'.">checkValidationOfFieldsAndTotalRateInPersonalMeal_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    50.076s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos; and Check the Validation for fields under &apos;Personal Meal Section&apos;, and Verify Added total expense in &apos;Personal Meal Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : In &apos;Personal Meal Section&apos; &apos;Add/Adit and Save&apos; Button displaying. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit Personal Meal Section&apos; page&nbsp; Title is - Add / Edit Personal Meal &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit Personal Meal Section&apos; following fields are displaying 1)ExpenseDateCalendar 2) Lunch 3) Dinner 5) Payment mode 6) Currency 7) Amount 8) Rate 9) Amount(RMB) 10) Delete 11)Add10MoreButton 12)SaveButton 13) CancelButton. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit Personal Meal Section&apos; clicked to &apos;Add 10 More&apos; Button and 10 more table has to created.&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Amount filed value is equals to No. of lunch + No. of Dinner. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : On &apos;Add/Edit Personal Meal Section&apos; Cancel the Model popup window has canceled&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : All fields validation and verification under &apos;Personal Meal Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Added total expense in &apos;Personal Meal Section&apos; is equals to &apos;Amount*Rate&apos;. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Edit' and 'save' Added Expense Under 'Local Transportation Section' and Verify updated total expense.">editAndSaveAddedRecordInLocalTransportation_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    70.917s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Edit&apos; and &apos;save&apos; Added Expense Under &apos;Local Transportation Section&apos; and Verify updated total expense. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;local Transportation Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;local Transportation Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Edited the Added Record and verify All Entered Details are Appearing in Respective Fields.&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : updated total expense in &apos;local Transportation Section&apos; is equals to &apos;updatedAmount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : updated total expense amount displaying on local Transportation Header - &apos;Local Transportation (Travel Expense) - Sub Total: 1060&apos; is displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify the Details while 'Edit' and 'save' Added Expense Under 'Personal Meal Section' and Verify updated total expense.">editAndSaveAddedRecordInPersonalMeal_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    67.654s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify the Details while &apos;Edit&apos; and &apos;save&apos; Added Expense Under &apos;Personal Meal Section&apos; and Verify updated total expense. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;Personal Meal Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Record Added under &apos;Personal Meal Section&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Edited the Added Record and verify All Entered Details are Appearing in Respective Fields.&nbsp; &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : updated total expense in &apos;Personal Meals Section&apos; is equals to &apos;updatedAmount*Rate&apos;. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : updated total expense amount displaying on Personal Meals Header - &apos;Personal Meal - Sub Total: 490&apos; is displaying. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim', Verify 'Cash advance' field and the Attach Documents Section.">verifyAttachDocumentsSection_TravelExpenseClaim</span>
+      </td>
+  <td class="duration">
+    37.066s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to &apos;Travel Expense Claim&apos;, Verify &apos;Cash advance&apos; field and the Attach Documents Section. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Login as Normal user and &apos;Cash advance&apos; fields is noneditale &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : &apos;flUpload&apos;, &apos;FileDescription&apos;, &apos;UploadButton&apos; displaying on the page. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : list of records displaying in a tabular format under following columns on the page:1) File Name2) Description3) Attachment4) Actions a) Delete &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; <br/>
+<br/>
+ Verified : Clicked to &apos;delete&apos; button vrification Alert is :: Are you sure you want to delete attachment? &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Clicked to &apos;delete&apos; button and verified to Alert appearing, cancel the alert Attachment not deleted &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified, Clicked to &apos;delete&apos; button and verified to Alert appearing and clicked to ok button, Added Attachment Deleted. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : File Attached Successfuly. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and go to 'Travel Expense Claim' and Verify the which 'Not Editable' and Validation Over Submit Button while not Added any Details for new Claim.">verifyElementsAndValidationOverSubmitButton</span>
+      </td>
+  <td class="duration">
+    17.979s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and go to Add new &apos;Travel Expense Claim&apos; and Verify the which &apos;NonEditable&apos; and Validation Over Submit Button while not Added any Details for Add New Claim. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: &apos;Travel Expense&apos; level present. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: application navigates to &apos;TravelExpense&apos; Fill Form page by click on &apos;Add New&apos; Button on List page. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: &apos;Filed For&apos;, field selected Loggedin user name &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: &apos;Filed By&apos;, field Value is Loggedin user name &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified The Elements : &apos;Request Number&apos;, &apos;Claim Number&apos;, &apos;Filed By&apos; are NonEditable Text Field &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Getting validation Alert for &apos;No. of Tickets&apos; field is blank :: - No. of Tickets cannot be left blank.<br/>
+ &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified Valication on submit Button : Alert Appearing for &apos;fill No. of Tickets&apos; while click to submit button without fill any details. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified &apos;No. of Tickets&apos; field: can&apos;t send char in text field. &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified : Valication on submit Button : Alert Appearing for &apos;Please specify at least one of the expense type.&apos; while click to submit button without fill any details. &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Login as a Normal User and Click to 'Travel Expense' in Claim Tab and Verify Elements are present on page.">verifyElementsPresentOnTravelExpenseListPage</span>
+      </td>
+  <td class="duration">
+    6.801s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        &lt;h3 style=&quot;color:#000080&quot;&gt; Login as a Normal User and Click to &apos;Travel Expense&apos; in Claim Tab and Verify Elements are present on page. &lt;/h3&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Elements are present on page (Search DDL, Search Button, Search Text, Add new button). &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: Claim no. are a link &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: list of records should be displayed in a tabular format under columns name present on the page: &lt;/li&gt;<br />
+                                &lt;li style=&quot;color:#0000FF&quot;&gt; Verified: application navigates to &apos;Travel Expense List&apos; page by click on &apos;Travel Expense&apos; link in claim tab &lt;/li&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
